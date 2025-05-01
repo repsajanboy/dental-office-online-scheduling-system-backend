@@ -69,5 +69,12 @@ CREATE TABLE appointments (
   FOREIGN KEY (dentist_id) REFERENCES dentists(id)
 );
 
+-- Insert dentists
+INSERT INTO dentists (name, specialization, email, phone)
+VALUES 
+  ('Dr. Sarah Johnson', 'Orthodontist', 'sarah.johnson@dentalclinic.com', '123-456-7890'),
+  ('Dr. Michael Lee', 'Pediatric Dentist', 'michael.lee@dentalclinic.com', '234-567-8901'),
+  ('Dr. Emma Wilson', 'Periodontist', 'emma.wilson@dentalclinic.com', '345-678-9012');
+
 ### 5. Start the server
 npm run dev
